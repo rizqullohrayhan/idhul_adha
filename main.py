@@ -8,12 +8,17 @@ pygame.mixer.music.play()
 
 sc = turtle.Screen()
 sc.bgcolor("midnightblue")
-sc.title("Selamat Idul Adha 1446 H")
+sc.title("Selamat Idul Adha 1447 H")
 sc.setup(700, 500)
 
-# Turtle script example
 t = turtle.Turtle()
-# t.hideturtle()
+
+t.penup()
+t.goto(0, -230)
+t.pencolor("white")
+t.write("By github.com/rizqullohrayhan",
+        align="center", font=("Arial", 11, "normal"))
+t.pencolor("black")
 
 def pindah(turtle, x, y):
     turtle.penup(); turtle.goto(x, y); turtle.pendown()
@@ -110,7 +115,7 @@ t.goto(0, 200)
 t.write("Selamat Hari Raya", align="center",
         font=("Arial", 18, "bold"))
 t.goto(0, 170)
-t.write("Idul Adha 1446 H", align="center",
+t.write("Idul Adha 1447 H", align="center",
         font=("Arial", 16, "bold"))
 t.goto(0, -180)
 t.pencolor("white")
@@ -149,5 +154,3 @@ while True:
         y = random.randint(20, 200)
         pindah(f, x, y)
     f.clear()
-
-turtle.done()
